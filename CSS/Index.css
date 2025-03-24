@@ -1,0 +1,404 @@
+.navbar {
+    background-color: rgb(255, 255, 255);
+    padding: 10px 0;
+}
+
+.navbar-brand img {
+    height: 65px;
+    width: auto;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.navbar-nav .nav-link {
+    font-weight: 600;
+    color: #0a3876;
+    font-size: 20px;
+    margin: 0 15px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: rgb(236, 47, 47);
+}
+.contact-info {
+    font-size: 17px;
+    color: #0a3876;
+}
+
+.hero-container{
+    background-image:url('../Assets/VM-images/white-abstract-background-modern-circle-260nw-2474885867.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.hero-section {
+    background-size: cover;
+    padding: 50px;
+}
+.stats-box {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: red;
+}
+.divider {
+    border-top: 2px solid black;
+    margin: 10px 0;
+}
+#carousel-inner, #carousel-item {
+    background-color: black;
+}
+#carousel-item {
+    height: 800px;
+}
+#carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.car-img:hover {
+    transform: scale(1.5);
+    z-index: 10;
+    position: relative;
+}
+.feature-box {
+    text-align: center;
+    background: linear-gradient(to right, #0a3876, #0d1d38);
+    color: aliceblue;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(156, 151, 151, 0.5);
+    overflow: hidden;
+    height: 400px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+.feature-box:hover {
+    transform: scale(1.2);
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8);
+    z-index: 10;
+    position: relative;
+}
+.feature-box i {
+    font-size: 80px; 
+    color: #dc3545;
+    margin-bottom: 20px;
+}
+
+.feature-box h5 {
+    font-weight: bold;
+}
+.underline {
+    width: 30px;
+    height: 3px;
+    background-color: red;
+    margin: 10px auto 0; 
+}
+.car-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.car-container {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.testimonal {
+    background: url('../Assets/VM-images/black-car.webp') no-repeat center center fixed;
+    background-size: cover;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.testimonial-container {
+    position: relative;
+    max-width: 2500px;
+    margin: auto;
+    padding: 90px 20px;
+    opacity: 0.7;
+   
+}
+.carousel-item1, .carousel-item2, .crousel-item3 {
+    transition: transform 0.6s ease-in-out;
+    text-align: center;
+    padding-top: 20px;
+    max-height: 300px;
+}
+
+.testimonial-card {
+    padding: 90px 20vw;
+    border-radius: 30px;
+    text-align: center;
+   
+}
+.carousel-item .testimonial-card {
+    background: rgba(72, 112, 187, 0.3);
+    color: rgb(255, 255, 255);
+}
+.icon-circle {
+    width: 100px;
+    height: 100px;
+    background-color: #ebf0f5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 25px;
+    font-size: 30px;
+    color: #333;
+    transition: color 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
+
+}
+.icon-container {
+    padding: 20px;
+    text-align: center;
+    transition: border 0.3s ease-in-out;
+    color: black;
+}
+
+.icon-container:hover {
+    border: 2px solid rgb(189, 184, 184);
+    border-radius: 10px;
+}
+
+.icon-container:hover .icon-circle {
+    background-color: #004aad;
+    color: white;
+}
+
+.underline-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.underline-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.underline-red{
+    height: 2px;
+    width: 45px;
+    transition: width 0.3s ease-in-out;
+    background-color: red;
+}
+
+.underline-blue {
+    background-color: blue;
+    height: 2px;
+    width: 90px;
+    transition: width 0.3s ease-in-out;
+    margin-top: 4px;
+}
+
+
+.navbar:hover ~ .container .underline-red {
+    width: 90px;
+}
+
+.navbar:hover ~ .container .underline-blue {
+    width: 45px;
+}
+
+/* footer */
+
+.footer {
+    background: linear-gradient(to right, #0a3876, #0d1d38);
+    color: white;
+    padding: 40px 0;
+}
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+.footer a:hover {
+    text-decoration: underline;
+}
+.social-icons a {
+    font-size: 24px;
+    margin-right: 15px;
+}
+.newsletter input {
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid white;
+    background:none;
+    margin: 10px 0px 10px 0px;
+}
+
+/* floatimg-button */
+.floating-button {
+    position: fixed;
+    right: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #0a3876;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    user-select: none;
+    transition: background 0.3s ease;
+    z-index: 1000;
+}
+
+.floating-button:hover {
+    background: rgb(3, 48, 107);
+}
+
+.menu-container {
+    position: fixed;
+    right: 90px; /* Keeps space between menu and button */
+    top: 50%;
+    transform: translateY(-50%) scale(0.5);
+    transform-origin: right center;
+    width: 300px;
+    background: rgba(0, 74, 173, 0.8);
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    opacity: 0;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.menu-container.show {
+    transform: translateY(-50%) scale(1);
+    opacity: 1;
+}
+
+.menu-container a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.267);
+    border-radius: 5px;
+    text-align: center;
+    /* transition: background 0.3s ease; */
+}
+
+.menu-container a:hover {
+    background: rgba(255, 255, 255, 0.192);
+}
+
+
+
+.Cookies{
+    font-family: sans-serif;
+}
+/* Cookie Banner Styling */
+#cookie-popup {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: white;
+    color: black;
+    padding: 15px 40px; /* Ensures padding on both sides */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #ddd;
+    font-size: 14px;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap;
+    box-sizing: border-box; /* Ensures padding is applied correctly */
+}
+
+/* Text Container */
+.cookie-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    max-width: 70%; /* Prevents it from stretching too much */
+}
+
+.cookie-links a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.cookie-links a:hover {
+    text-decoration: underline;
+}
+
+/* Button Styles */
+.cookie-buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cookie-buttons button {
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.settings {
+    background: transparent;
+    color: black;
+}
+
+.reject {
+    background: #2d9cdb; /* Blue */
+    color: white;
+}
+
+.accept {
+    background: #2d9cdb; /* Blue */
+    color: white;
+}
+
+/* Close Icon */
+.close-btn {
+    font-size: 18px;
+    cursor: pointer;
+    padding: 5px 10px;
+    color: black;
+    font-weight: bold;
+    margin-left: 15px; /* Adds space between buttons and close icon */
+}
+
+.close-btn:hover {
+    color: red;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    #cookie-popup {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 15px 20px; /* Adjust padding for mobile */
+    }
+    .cookie-buttons {
+        margin-top: 10px;
+    }
+    .cookie-text {
+        max-width: 100%; /* Allows full width on small screens */
+    }
+}
