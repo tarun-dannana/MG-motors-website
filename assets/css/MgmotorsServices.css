@@ -1,0 +1,196 @@
+.navbar-brand span{
+    font-weight:bold;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+   color:rgb(88, 13, 158);
+
+}
+
+.top{
+    background-image: linear-gradient( rgb(31, 154, 225),rgba(255, 255, 255, 0.886));
+}
+.head{
+   
+    font-size: 18px;
+    font-family: poppins;
+    color: rgb(29, 70, 172);
+   
+   
+}
+#navbarNav .nav-link{
+    color:rgb(88, 13, 158); 
+    font-size: 16px;
+   font-family: poppins;
+   }
+   #navbarNav .nav-link:hover{
+       color:rgb(170, 18, 18); 
+       font-size: 16px;
+      font-family: poppins;
+      }
+.footer {
+    background: linear-gradient(to right, #0a3876, #0d1d38);
+    color: white;
+    padding: 40px 0;
+}
+.footer a {
+    color: white;
+    text-decoration: none;
+    line-height: 30px;
+    font-size: 14px;
+}
+.footer a:hover {
+    text-decoration: underline;
+}
+.social-icons a {
+    font-size: 24px;
+    margin-right: 15px;
+ 
+}
+.newsletter input {
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    border:1px solid white;
+    background:linear-gradient(to right, #0a3876, #0d1d38);;
+}
+.footer h5{
+    font-family: poppins;
+    font-size: 22px;
+    font-weight: 600;
+}
+.newsletter button{
+    background:linear-gradient(to right, #0a3876, #0d1d38);
+}
+
+.s-box{
+  height: 300px;
+  transition: background-color 0.3s ease-in-out;
+  border-radius: 10px;
+}
+.service-box{
+    height: 250px;
+    background-color: rgba(240, 238, 238, 0.66);
+   
+    
+}
+.s-box:hover .service-box:nth-child(1){
+    background-color: rgb(141, 139, 139);
+    color: white;
+}
+.s-box:hover .span:nth-child(2){
+    background-color:#0a3876;
+    color: aqua;
+  
+    transition: all 0.3s ease-out;
+}
+
+.span{
+    background-color: #f6f6f6;
+   text-align: center;
+    height: 50px;
+   align-content: center;
+
+
+}
+.span a{
+    color:red;
+    text-decoration: none;
+    
+}
+.span a:hover{
+    color: aqua;
+}
+
+
+
+.service-box i{
+   
+    font-size: 30px;
+    margin-top: 10px;
+    line-height: 60px;
+   
+    
+   
+}
+.service-box h4{
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-family: poppins;
+
+}
+.service-box p{
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 10px;
+    line-height: 25px;
+    font-family: poppins;
+
+}
+.service-box a{
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-family: poppins;
+    text-decoration: none;
+
+}
+.floating-button {
+    position: fixed;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 74, 173, 0.8);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    user-select: none;
+    /* transition: background 0.3s ease; */
+    z-index: 1000;
+}
+
+.floating-button:hover {
+    background: rgb(3, 48, 107);
+}
+
+.menu-container {
+    position: fixed;
+    right: 90px; /* Keeps space between menu and button */
+    top: 50%;
+    transform: translateY(-50%) scale(0.5);
+    transform-origin: right center;
+    width: 300px;
+    background: rgba(0, 74, 173, 0.8);
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    opacity: 0;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.menu-container.show {
+    transform: translateY(-50%) scale(1);
+    opacity: 1;
+}
+
+.menu-container a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.267);
+    border-radius: 5px;
+    text-align: center;
+    /* transition: background 0.3s ease; */
+}
+
+.menu-container a:hover {
+    background: rgba(255, 255, 255, 0.192);
+}
