@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CarDetails</title>
+    <link rel="stylesheet" href="assets/css/carDetails.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <div class="container-fluid top">
+      <div class="row">
+        <div class="col-md-12 pt-2">
+          <h2 class="head fw-bold">
+            <marquee>One Of the top Motors-MG Motors</marquee>
+          </h2>
+        </div>
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">
+          <img
+            src="./assets/images/m logo.jpg"
+            alt="Varun Motors"
+            height="70"
+            width="70"
+          />
+          <span>MG Motors</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse fw-bold me-5" id="navbarNav">
+          <ul class="navbar-nav ms-auto me-2">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item me-2">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+            <li class="nav-item dropdown me-2 fw-bold">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                New Cars
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Arena Cars</a></li>
+                <li><a class="dropdown-item" href="#">Nexa Cars</a></li>
+                <li><a class="dropdown-item" href="#">Commercial Cars</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                True Value
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Buy Used Cars</a></li>
+                <li><a class="dropdown-item" href="#">Sell A Car</a></li>
+              </ul>
+            </li>
+            <li class="nav-item me-2">
+              <a class="nav-link" href="#">Outlets</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Our Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container mt-4">
+      <div class="row">
+        <!-- Car Image -->
+        <div class="car col-md-6 text-center mt-5 pt-5">
+          <img
+            src="./assets/images/altok-10-metallic-sizzling-red1.png"
+            alt="Maruti Alto K10"
+            class="car-image"
+          />
+          <p class="fw-bold car-under my-5">Metallic Sizzling Red</p>
+        </div>
+
+        <!-- Car Details -->
+        <div class="col-md-6 side">
+          <h2>Maruti Alto K10 Ex-Showroom Price</h2>
+          <p class="price">₹ 4.84 - 5.96 Lakhs*</p>
+          <div class="col-md-12 gap-3 d-flex">
+            <div class="col-md-6 mb-3">
+             
+              <select class="form-select">
+                <option selected>Andhra Pradesh</option>
+                <option>Tamil Nadu</option>
+                <option>Karnataka</option>
+              </select>
+            </div>
+
+            <div class="col-md-6 mb-3">
+             
+              <select class="form-select">
+                <option selected>Visakhapatnam</option>
+                <option>Hyderabad</option>
+                <option>Bangalore</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-12 my-4 text-center">
+            <div class="features d-flex gap-3">
+              <div class="features1 d-flex">
+                <img src="./assets/images/speedometer.png" />
+                <div class="f2">
+                  <strong>Engine</strong>
+                  <p>998cc</p>
+                </div>
+              </div>
+              <div class="features1 d-flex">
+                <img src="./assets/images/fuel.png" />
+                <div class="f2">
+                  <strong>Milage</strong>
+                  <p>24.39kmpl</p>
+                </div>
+              </div>
+              <div class="features1 d-flex">
+                <img src="./assets/images/engine.png" />
+                <div class="f2">
+                  <strong>power</strong>
+                  <p>49 kW @ 5500 rpm</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex my-3 btn1 gap-3">
+            <button class="btn btn-outline-dark">EMI Calculator</button>
+            <button class="btn btn-primary">Get On Road Price</button>
+          </div>
+
+          <hr />
+
+          <p>Our professional and well-trained staff is ready to assist you</p>
+          <button class="btn btn2 btn-dark">View Brochure</button>
+
+          <h6 class="mt-4">Colour Variants Available:</h6>
+          <div class="d-flex">
+            <div
+              class="color-circle active"
+              style="background-color: red"
+            ></div>
+            <div class="color-circle" style="background-color: grey"></div>
+            <div class="color-circle" style="background-color: brown"></div>
+            <div class="color-circle" style="background-color: silver"></div>
+            <div class="color-circle" style="background-color: blue"></div>
+            <div class="color-circle" style="background-color: lightgrey"></div>
+            <div class="color-circle" style="background-color: black"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="col-md-3">
+        <label class="form-label">Select Variant</label>
+        <select class="form-select">
+          <option selected>Variant1</option>
+          <option>Variant2</option>
+          <option>Variant3</option>
+        </select>
+      </div>
+    </div>
+    <div class="container specy mt-5">
+      <h2 class="mb-4">Maruti Alto K10 Key Specifications</h2>
+
+      <div class="container mb-3">
+        <div class="row ">
+            <div class=" box1 col-md-4 p-3 gap-3">
+                <div class="t1 mb-2">
+                    <img class="label-img" src="https://www.varunmaruti.com/assets/maintemp/images/products/price-tag.png" alt=""/>
+                    <span>Price</span>
+                </div>
+                <div class="t2">
+                    4.83 Lakhs onwards
+                </div>
+            </div>
+            <div class="col-md-4  box1 p-3">
+                <div class="t1 mb-2"><img class="label-img" src="https://www.varunmaruti.com/assets/maintemp/images/products/mileage.png" alt=""/>
+                    <span>Mileage</span>
+                </div>
+                <div  class="t2">24.39 kmpl</div>
+            </div>
+            <div class="col-md-4 box1 p-3">
+                <div  class="t1 mb-2"><img class="label-img" src="https://www.varunmaruti.com/assets/maintemp/images/products/seat.png" alt=""/>
+                  <span> Seating Capacity</span> 
+                </div>
+                <div  class="t2">5</div>
+            </div>
+            <div class="col-md-4  box2 p-3">
+                <div  class="t1 mb-2">
+                    <img class="label-img" src="https://www.varunmaruti.com/assets/maintemp/images/products/engine-o.png" alt=""/>
+                    <span>Engine</span>
+                </div>
+                <div class="t2" >998cc</div>
+            </div>
+            <div class="col-md-4  box2 p-3">
+                <div  class="t1 mb-2"><img class="label-img" src="https://www.varunmaruti.com/assets/maintemp/images/products/fueltype.png" alt=""/>
+                   <span>Fuel Type</span> 
+                    
+                </div>
+                <div  class="t2">Petrol</div>
+            </div>
+            <div class="col-md-4  box2 p-3">
+                <div  class="t1 mb-2"><img class="label-img" src="https://www.varunmaruti.com/assets/maintemp/images/products/gearbox.png" alt=""/>
+                    <span>Transmission</span>
+                </div>
+                <div  class="t2"> Manual</div>
+            </div>
+        </div>
+    </div>       
+    </div>
+    
+
+
+
+    <div class="container-fluid slide1 my-5">
+      <h1 class="text-center me-4 p-3">Gallery</h1>
+    
+      <!-- Nav Tabs -->
+      <ul class="nav nav-pills justify-content-center" id="carTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link active"
+            id="highlight-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#highlight"
+            type="button"
+            role="tab"
+            aria-controls="highlight"
+            aria-selected="true"
+          >
+            HIGHLIGHT
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="exterior-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#exterior"
+            type="button"
+            role="tab"
+            aria-controls="exterior"
+            aria-selected="false"
+          >
+            EXTERIOR
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="interior-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#interior"
+            type="button"
+            role="tab"
+            aria-controls="interior"
+            aria-selected="false"
+          >
+            INTERIOR
+          </button>
+        </li>
+      </ul>
+    
+      <!-- Tab Content -->
+      <div class="tab-content" id="carTabContent">
+        <!-- HIGHLIGHT TAB -->
+        <div 
+          class="tab-pane fade show active p-3 text-center" 
+          id="highlight" 
+          role="tabpanel" 
+          aria-labelledby="highlight-tab"
+        >
+          <div class="mx-auto carousel-container p-3  mt-3">
+            <div id="highlightCarousel" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                  <div class="card">
+                    <img 
+                      src="./assets/images/topview.jpg" 
+                      class="card-img-top" 
+                      alt="Highlight 1"
+                    >
+                    <div class="card-body text-center">
+                      <p class="card-text">1st In Segment 4 Speakers</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+                  <div class="card">
+                    <img 
+                      src="./assets/images/auto-gear-shift-technology1.jpg" 
+                      class="card-img-top" 
+                      alt="Highlight 2"
+                    >
+                    <div class="card-body text-center">
+                      <p class="card-text">Autogear Shift Technology/p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="carousel-item">
+                  <div class="card">
+                    <img 
+                      src="./assets/images/smartplay-studio-with-smartphone-navigation.jpg" 
+                      class="card-img-top" 
+                      alt="Highlight 3"
+                    >
+                    <div class="card-body text-center">
+                      <p class="card-text">Smartplay Studio</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Slide 4 -->
+                <div class="carousel-item">
+                  <div class="card">
+                    <img 
+                      src="./assets/images/speedometer-with-exciting-digital-speed-display1.jpg" 
+                      class="card-img-top" 
+                      alt="Highlight 4"
+                    >
+                    <div class="card-body text-center">
+                      <p class="card-text">Speedometer With Existing Display</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Carousel Controls -->
+              <button 
+                class="carousel-control-prev" 
+                type="button" 
+                data-bs-target="#highlightCarousel" 
+                data-bs-slide="prev"
+              >
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button 
+                class="carousel-control-next" 
+                type="button" 
+                data-bs-target="#highlightCarousel" 
+                data-bs-slide="next"
+              >
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        
+        </div>
+    
+        <!-- EXTERIOR TAB -->
+        <div 
+          class="tab-pane fade p-3 text-center" 
+          id="exterior" 
+          role="tabpanel" 
+          aria-labelledby="exterior-tab"
+        >
+          <div class="mx-auto carousel-container">
+            <div id="exteriorCarousel" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                  <div class="card">
+                    <img 
+                      src="./assets/images/exterior 1.jpg" 
+                      class="card-img-top" 
+                      alt="Exterior 1"
+                    >
+                    <div class="card-body text-center">
+                      <p class="card-text">Honeycomb Grille</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+                  <div class="card">
+                    <img 
+                      src="./assets/images/exterior 2.jpg" 
+                      class="card-img-top" 
+                      alt="Exterior 2"
+                    >
+                    <div class="card-body text-center">
+                      <p class="card-text">Honeycomb Theemd tires</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="carousel-item">
+                  <div class="card">
+                    <img 
+                      src="./assets/images/exterior 3.jpg" 
+                      class="card-img-top" 
+                      alt="Exterior 3"
+                    >
+                    <div class="card-body text-center">
+                      <p class="card-text">Peppy headlamps</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Slide 4 -->
+                <div class="carousel-item">
+                  <div class="card">
+                    <img 
+                      src="./assets/images/exterior 4.jpg" 
+                      class="card-img-top" 
+                      alt="Exterior 4"
+                    >
+                    <div class="card-body text-center">
+                      <p class="card-text">Reverse Parking Senosrs </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Carousel Controls -->
+              <button 
+                class="carousel-control-prev" 
+                type="button" 
+                data-bs-target="#exteriorCarousel" 
+                data-bs-slide="prev"
+              >
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button 
+                class="carousel-control-next" 
+                type="button" 
+                data-bs-target="#exteriorCarousel" 
+                data-bs-slide="next"
+              >
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        
+        </div>
+    
+        <!-- INTERIOR TAB -->
+        <div 
+          class="tab-pane fade p-3 text-center" 
+          id="interior" 
+          role="tabpanel" 
+          aria-labelledby="interior-tab"
+        >
+          <div class="mx-auto carousel-container">
+            <div id="interiorCarousel" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                  <div class="card">
+                    <img 
+                      src="assets/images/topview.jpg" 
+                    
+                      class="img-thumbnail" 
+                      alt="Interior 1"
+                    >
+                    <div class="card-body text-center">
+                      <p class="card-text">Autogear Shift Technology</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+                  <div class="card">
+                    <img 
+                      src="assets/images/speedometer-with-exciting-digital-speed-display1.jpg" 
+                      class="card-img-top" 
+                      alt="Interior 2"
+                    >
+                    <div class="card-body text-center">
+                      <p class="card-text">Lively and Spacious Interior</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="carousel-item">
+                  <div class="card">
+                    <img 
+                      src="assets/images/auto-gear-shift-technology1.jpg" 
+                      class="card-img-top" 
+                      alt="Interior 3"
+                    >
+                    <div class="card-body text-center">
+                      <p class="card-text">Smartplay and studio navigation</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Slide 4 -->
+                <div class="carousel-item">
+                  <div class="card">
+                    <img 
+                      src="assets/images/smartplay-studio-with-smartphone-navigation.jpg" 
+                      class="card-img-top" 
+                      alt="Interior 4"
+                    >
+                    <div class="card-body text-center">
+                      <p class="card-text">speedometer with digital display</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Carousel Controls -->
+              <button 
+                class="carousel-control-prev" 
+                type="button" 
+                data-bs-target="#interiorCarousel" 
+                data-bs-slide="prev"
+              >
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button 
+                class="carousel-control-next" 
+                type="button" 
+                data-bs-target="#interiorCarousel" 
+                data-bs-slide="next"
+              >
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container mt-5">
+      <div class="row para">
+          <div class="col-md-10">
+            <h3>Introduction</h3>
+            <p>When it comes to affordable and fuel-efficient cars, Maruti Suzuki's Alto K10 is a popular option among Indian consumers</p>
+            <p>The Alto K10 was first launched in India in 2010 as an upgraded version of the popular Alto 800 model. </p>
+            <p>
+              The car has undergone several updates since its launch, including a facelift in 2014, a BS6-compliant engine update in 2020 and the latest 2022 update.
+            </p>
+          </div>
+          <div class="col-md-10">
+            <h3>Design and Build</h3>
+            <p>The Alto K10 has a stylish and modern design that sets it apart from its predecessor. It features a sleek honeycomb front grille, a bold bumper, and sharp headlamps. It’s the latest car to be built on Maruti Suzuki’s HEARTECT platform.  </p>
+
+            <p>The Alto K10 was first launched in India in 2010 as an upgraded version of the popular Alto 800 model. </p>
+            <p>
+              The car has undergone several updates since its launch, including a facelift in 2014, a BS6-compliant engine update in 2020 and the latest 2022 update.
+            </p>
+          </div>
+          <div class="col-md-10">
+            <h3>Engine and Performance</h3>
+            <p>There’s also a CNG variant for those who want another fuel option. </p>
+            <p>The Alto K10 is powered by a 1.0-liter 3 cylinder DualJet engine that produces 66.6 hp @ 5500 rpm of power and 89 Nm @ 3500 rpm of torque. </p>
+            <p>The Alto K10 was first launched in India in 2010 as an upgraded version of the popular Alto 800 model. </p>
+            <p>
+              The car has undergone several updates since its launch, including a facelift in 2014, a BS6-compliant engine update in 2020 and the latest 2022 update.
+            </p>
+          </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container mt-5">
+          <div class="row">
+              <div class="col-md-3">
+                  <h5>Useful Links</h5>
+                  <ul class="list-unstyled">
+                      <li><a href="#">Awards</a></li>
+                      <li><a href="#">Testimonials</a></li>
+                      <li><a href="#">Gallery</a></li>
+                      <li><a href="#">Careers</a></li>
+                      <li><a href="#">Insurance Renewal</a></li>
+                      <li><a href="#">Driving School</a></li>
+                      <li><a href="#">Car Subscription</a></li>
+                      <li><a href="#">Accessories</a></li>
+                  </ul>
+              </div>
+              <div class="col-md-3">
+                  <h5>Hatchback</h5>
+                  <ul class="list-unstyled">
+                      <li><a href="#">Alto K10</a></li>
+                      <li><a href="#">Wagon R</a></li>
+                      <li><a href="#">Celerio</a></li>
+                      <li><a href="#">Swift</a></li>
+                      <li><a href="#">Ignis</a></li>
+                      <li><a href="#">Baleno</a></li>
+                  </ul>
+                  <h5>Sedan</h5>
+                  <ul class="list-unstyled">
+                      <li><a href="#">Ciaz</a></li>
+                      <li><a href="#">Dzire</a></li>
+                  </ul>
+              </div>
+              <div class="col-md-3">
+                  <h5>MUV & SUV</h5>
+                  <ul class="list-unstyled">
+                      <li><a href="#">Brezza</a></li>
+                      <li><a href="#">S-Presso</a></li>
+                      <li><a href="#">Ertiga</a></li>
+                      <li><a href="#">XL6</a></li>
+                      <li><a href="#">Jimny</a></li>
+                      <li><a href="#">FRONX</a></li>
+                  </ul>
+                  <h5>Commercial</h5>
+                  <ul class="list-unstyled">
+                      <li><a href="#">Super Carry</a></li>
+                      <li><a href="#">EECO Cargo</a></li>
+                  </ul>
+              </div>
+              <div class="col-md-3">
+                  <h5>Follow Us</h5>
+                  <div class="social-icons">
+                      <a href="#"><i class="bi bi-facebook"></i></a>
+                      <a href="#"><i class="bi bi-instagram"></i></a>
+                      <a href="#"><i class="bi bi-linkedin"></i></a>
+                      <a href="#"><i class="bi bi-youtube"></i></a>
+                  </div>
+                  <h5 class="mt-3">Subscribe Our Newsletter</h5>
+                  <div class="newsletter">
+                      <input type="email" placeholder="Enter your Email">
+                      <button class="btn btn-primary btn-sm mt-2">Submit</button>
+                  </div>
+              </div>
+          </div>
+          <div class="text-center mt-4">
+              <p>© Copyright MG Motors Pvt Ltd 2025</p>
+              <p>
+                  <a href="#">Privacy Policy</a> |
+                  <a href="#">Terms And Conditions</a> |
+                  <a href="#">Disclaimer</a>
+              </p>
+          </div>
+      </div>
+      <div class="floating-button" id="menuToggler" onclick="toggleMenu()">☰</div>
+      <div class="menu-container" id="menu">
+          <a href="#">Book a Test Drive</a>
+          <a href="#">Book Showroom Visit</a>
+          <a href="#">Book a Service</a>
+          <a href="#">Our Outlets</a>
+          <a href="#">Genuine Accessories</a>
+          <a href="#">WhatsApp</a>
+      </div>
+      
+      <script>
+          function toggleMenu() {
+              var menu = document.getElementById("menu");
+              var toggler = document.getElementById("menuToggler");
+              
+              if (menu.classList.contains("show")) {
+                  menu.classList.remove("show");
+                  toggler.innerHTML = "☰";
+              } else {
+                  menu.classList.add("show");
+                  toggler.innerHTML = "✖";
+              }
+          }
+      </script>
+</body>
+</html>
