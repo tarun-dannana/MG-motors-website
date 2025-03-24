@@ -1,30 +1,28 @@
-.navbar-brand span{
-    font-weight:bold;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 25px;
-   color:rgb(88, 13, 158);
+.navbar {
+    background-color: rgb(255, 255, 255);
+    padding: 10px 0;
+}
 
+.navbar-brand img {
+    height: 65px;
+    width: auto;
 }
-#navbarNav .nav-link{
- color:rgb(88, 13, 158); 
- font-size: 16px;
-font-family: poppins;
+
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
 }
-#navbarNav .nav-link:hover{
-    color:rgb(170, 18, 18); 
-    font-size: 16px;
-   font-family: poppins;
-   }
-.top{
-    background-image: linear-gradient( rgb(31, 154, 225),rgba(255, 255, 255, 0.886));
+
+.navbar-nav .nav-link {
+    font-weight: 600;
+    color: #0a3876;
+    font-size: 20px;
+    margin: 0 15px;
 }
-marquee{
-   
-    font-size: 18px;
-    font-family:poppins;
-    color: rgb(29, 70, 172);
-   
-   
+
+.navbar-nav .nav-link:hover {
+    color: rgb(236, 47, 47);
 }
 .features img{
     width: 50px;
@@ -261,7 +259,7 @@ select{
 }
 
 
- .footer {
+.footer {
     background: linear-gradient(to right, #0a3876, #0d1d38);
     color: white;
     padding: 40px 0;
@@ -269,8 +267,6 @@ select{
 .footer a {
     color: white;
     text-decoration: none;
-    line-height: 30px;
-    font-size: 14px;
 }
 .footer a:hover {
     text-decoration: underline;
@@ -278,24 +274,71 @@ select{
 .social-icons a {
     font-size: 24px;
     margin-right: 15px;
- 
 }
 .newsletter input {
     width: 100%;
     padding: 5px;
     border-radius: 5px;
-    border:1.5px solid white;
-    background-color: #0a3876;
+    border: 1px solid white;
+    background:none;
+    margin: 10px 0px 10px 0px;
 }
-.newsletter button{
-    background-color: white;
-    color:#0a3876;
-    font-weight: bold;
-    font-size: 16px;
-    margin-top: 10px;
+.floating-button {
+    position: fixed;
+    right: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #0a3876;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    user-select: none;
+    transition: background 0.3s ease;
+    z-index: 1000;
 }
-.footer h5{
-    font-family: poppins;
-    font-size: 22px;
-    font-weight: 600;
+
+.floating-button:hover {
+    background: rgb(3, 48, 107);
+}
+
+.menu-container {
+    position: fixed;
+    right: 90px; /* Keeps space between menu and button */
+    top: 50%;
+    transform: translateY(-50%) scale(0.5);
+    transform-origin: right center;
+    width: 300px;
+    background: rgba(0, 74, 173, 0.8);
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    opacity: 0;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.menu-container.show {
+    transform: translateY(-50%) scale(1);
+    opacity: 1;
+}
+
+.menu-container a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.267);
+    border-radius: 5px;
+    text-align: center;
+    /* transition: background 0.3s ease; */
+}
+
+.menu-container a:hover {
+    background: rgba(255, 255, 255, 0.192);
 }

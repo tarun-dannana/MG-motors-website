@@ -23,91 +23,37 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </head>
   <body>
-    <div class="container-fluid top">
-      <div class="row">
-        <div class="col-md-12 pt-2">
-          <h2 class="head fw-bold">
-            <marquee>One Of the top Motors-MG Motors</marquee>
-          </h2>
-        </div>
-      </div>
-    </div>
-    <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light">
-      <div class="container">
-        <a class="navbar-brand fw-bold" href="#">
-          <img
-            src="./assets/images/m logo.jpg"
-            alt="Varun Motors"
-            height="70"
-            width="70"
-          />
-          <span>MG Motors</span>
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse fw-bold me-5" id="navbarNav">
-          <ul class="navbar-nav ms-auto me-2">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Home</a>
-            </li>
-            <li class="nav-item me-2">
-              <a class="nav-link" href="#">About Us</a>
-            </li>
-            <li class="nav-item dropdown me-2 fw-bold">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                New Cars
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Arena Cars</a></li>
-                <li><a class="dropdown-item" href="#">Nexa Cars</a></li>
-                <li><a class="dropdown-item" href="#">Commercial Cars</a></li>
+    <nav class="navbar navbar-expand-lg navbar-light border-bottom sticky-top">
+      <div class="container d-flex justify-content-between align-items-center">
+          <!-- Logo -->
+          <a class="navbar-brand" href="#">
+              <img src="./Assets/images/pngtree-mv-vm-letter-vector-logo-image_332121.jpg" alt="Varun Motors">
+          </a>
+  
+          <!-- Navbar Toggler for Mobile -->
+          <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon bg-light"></span>
+          </button>
+  
+          <!-- Navigation Links -->
+          <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+              <ul class="navbar-nav">
+                  <li class="nav-item"><a class="nav-link" href="./Index.html">Home</a></li>
+                  <li class="nav-item"><a class="nav-link" href="./AboutUs.html">About Us</a></li>
+                  <li class="nav-item"><a class="nav-link" href="./Cars.html">Cars</a></li>
+                  <li class="nav-item"><a class="nav-link" href="./Services.html">Our Services</a></li>
+                  <li class="nav-item"><a class="nav-link" href="./Contactus.html">Contact Us</a></li>
               </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                True Value
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Buy Used Cars</a></li>
-                <li><a class="dropdown-item" href="#">Sell A Car</a></li>
-              </ul>
-            </li>
-            <li class="nav-item me-2">
-              <a class="nav-link" href="#">Outlets</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Our Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact Us</a>
-            </li>
-          </ul>
-        </div>
+          </div>
+  
+          <!-- Sign Up Button -->
+          <div class="d-none d-lg-block">
+              <a href="./signup.html" class="btn btn-dark">Sign Up</a>
+          </div>
       </div>
-    </nav>
+  </nav>
+  
 
     <div class="container mt-4">
       <div class="row">
@@ -601,8 +547,9 @@
           </div>
       </div>
     </div>
-    <footer class="footer">
-      <div class="container mt-5">
+     <!-- footer -->
+     <footer class="footer">
+      <div class="container">
           <div class="row">
               <div class="col-md-3">
                   <h5>Useful Links</h5>
@@ -673,29 +620,39 @@
               </p>
           </div>
       </div>
-      <div class="floating-button" id="menuToggler" onclick="toggleMenu()">☰</div>
-      <div class="menu-container" id="menu">
-          <a href="#">Book a Test Drive</a>
-          <a href="#">Book Showroom Visit</a>
-          <a href="#">Book a Service</a>
-          <a href="#">Our Outlets</a>
-          <a href="#">Genuine Accessories</a>
-          <a href="#">WhatsApp</a>
-      </div>
-      
-      <script>
-          function toggleMenu() {
-              var menu = document.getElementById("menu");
-              var toggler = document.getElementById("menuToggler");
-              
-              if (menu.classList.contains("show")) {
-                  menu.classList.remove("show");
-                  toggler.innerHTML = "☰";
-              } else {
-                  menu.classList.add("show");
-                  toggler.innerHTML = "✖";
-              }
+  </footer>
+  <!-- floating-button -->
+  <div class="floating-button" id="menuToggler" onclick="toggleMenu()">☰</div>
+  <div class="menu-container" id="menu">
+      <a href="#">Book a Test Drive</a>
+      <a href="#">Book Showroom Visit</a>
+      <a href="#">Book a Service</a>
+      <a href="#">Our Outlets</a>
+      <a href="#">Genuine Accessories</a>
+      <a href="#">WhatsApp</a>
+  </div>
+  
+  <script>
+      function toggleMenu() {
+          var menu = document.getElementById("menu");
+          var toggler = document.getElementById("menuToggler");
+          
+          if (menu.classList.contains("show")) {
+              menu.classList.remove("show");
+              toggler.innerHTML = "☰";
+          } else {
+              menu.classList.add("show");
+              toggler.innerHTML = "✖";
           }
-      </script>
-</body>
-</html>
+      }
+  </script>
+ 
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  
+  
+  </body>
+  </html>
+  
+  
+  
