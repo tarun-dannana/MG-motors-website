@@ -24,8 +24,23 @@
 .navbar-nav .nav-link:hover {
     color: rgb(236, 47, 47);
 }
+.talk{
+    font-size: 22px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: orange;
+
+}
+.talk1{
+    font-size: 34px;
+    font-family: "Dosis", sans-serif;
+    font-size: 44px;
+    color: rgba(8, 43, 118, 0.694);
+    font-weight:bold;
+    
+   
+}
 .img img{
-    height: 50vw;
+    height:40vw;
     width:100%;
 }
 .img2 img{
@@ -82,6 +97,7 @@
 .nav-item a{
     color: black;
 }
+
 .nav-fill a:hover{
     border-bottom: 2.5px solid red;
 }
