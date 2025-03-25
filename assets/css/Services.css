@@ -36,11 +36,11 @@
       
   }
   .s-box:hover .service-box:nth-child(1){
-      background-color: rgb(141, 139, 139);
+      background-color:#1AAFBC;
       color: white;
   }
   .s-box:hover .span:nth-child(2){
-      background-color:#0a3876;
+      background-color:#274e6c;
       color: aqua;
     
       transition: all 0.3s ease-out;
@@ -55,16 +55,14 @@
   
   }
   .span a{
-      color:red;
+      color:rgb(220, 53, 53);
       text-decoration: none;
+      
       
   }
   .span a:hover{
-      color: aqua;
+      color: rgb(246, 157, 15);
   }
-  
-  
-  
   .service-box i{
      
       font-size: 30px;
@@ -133,7 +131,7 @@
         cursor: pointer;
         font-size: 20px;
         user-select: none;
-        transition: background 0.3s ease;
+        transition:background 0.3s ease;
         z-index: 1000;
     }
     
@@ -180,3 +178,79 @@
     .menu-container a:hover {
         background: rgba(255, 255, 255, 0.192);
     }
+    .left img{
+        width: 90%;
+    }
+   
+
+/* Service Box Styling */
+.service-box111 {
+    display: block;
+    padding: 15px;
+    border-radius: 12px;
+    border-left: 4px solid  rgba(0, 74, 173, 0.8);
+    cursor: pointer;
+    background: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-weight: 500;
+    position: relative; /* For pseudo-elements */
+    overflow: hidden; /* Prevents overflow of the animation */
+    transition: color 0.3s ease;
+    color: black;
+    position: relative;
+    z-index: 1;
+}
+
+/* Hide the radio input */
+.service-box111 input {
+    display: none;
+}
+
+/* Hover Effect: Left-to-Right Background Fill */
+.service-box111::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+   background:  rgba(0, 74, 173, 0.8); /*  Single color for hover */
+    z-index: -1; /* Push background behind the text */
+    transform: translateX(-100%); /* Initially hidden to the left */
+    transition: transform 0.4s ease; /* Smooth transition */
+}
+
+/* When Hovering, Move Background from Left to Right */
+.service-box111:hover::before {
+    transform: translateX(0); /* Full width from left to right */
+}
+
+/* Checked (Selected) State */
+.service-box111 input:checked + span,
+.service-box111 input:checked {
+    background: #6c63ff; /* Solid color on selection */
+    color: white;
+    border-left: 4px solid #5a55da;
+}
+
+.why{
+    font-size: 18px;
+   
+}
+.why1{
+    font-size: 30px;
+    font-family: poppins;
+    color:  rgba(0, 74, 173, 0.8);
+
+}
+.why2{
+    font-size: 16px;
+    font-family:poppins;
+    font-weight: 400;
+    
+}
+.service-box111:hover {
+    color: white;
+}
+
+
