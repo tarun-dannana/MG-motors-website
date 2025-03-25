@@ -24,24 +24,79 @@
 .navbar-nav .nav-link:hover {
     color: rgb(236, 47, 47);
 }
-.head{
-   
-    font-size: 18px;
-    font-family: poppins;
-    color: rgb(29, 70, 172);
-   
-   
-}
-/* #navbarNav .nav-link{
-    color:rgb(88, 13, 158); 
-    font-size: 16px;
-   font-family: poppins;
-   }
-   #navbarNav .nav-link:hover{
-       color:rgb(170, 18, 18); 
-       font-size: 16px;
+.s-box{
+    height: 300px;
+    transition: background-color 0.3s ease-in-out;
+    border-radius: 10px;
+  }
+  .service-box{
+      height: 250px;
+      background-color: rgba(240, 238, 238, 0.66);
+     
+      
+  }
+  .s-box:hover .service-box:nth-child(1){
+      background-color: rgb(141, 139, 139);
+      color: white;
+  }
+  .s-box:hover .span:nth-child(2){
+      background-color:#0a3876;
+      color: aqua;
+    
+      transition: all 0.3s ease-out;
+  }
+  
+  .span{
+      background-color: #f6f6f6;
+     text-align: center;
+      height: 50px;
+     align-content: center;
+  
+  
+  }
+  .span a{
+      color:red;
+      text-decoration: none;
+      
+  }
+  .span a:hover{
+      color: aqua;
+  }
+  
+  
+  
+  .service-box i{
+     
+      font-size: 30px;
+      margin-top: 10px;
+      line-height: 60px;
+     
+      
+     
+  }
+  .service-box h4{
+      font-weight: 600;
+      font-size: 18px;
+      margin-bottom: 20px;
       font-family: poppins;
-      } */
+  
+  }
+  .service-box p{
+      font-weight: 400;
+      font-size: 14px;
+      margin-bottom: 10px;
+      line-height: 25px;
+      font-family: poppins;
+  
+  }
+  .service-box a{
+      font-weight: 500;
+      font-size: 14px;
+      margin-bottom: 10px;
+      font-family: poppins;
+      text-decoration: none;
+  
+  }
       .footer {
         background: linear-gradient(to right, #0a3876, #0d1d38);
         color: white;
