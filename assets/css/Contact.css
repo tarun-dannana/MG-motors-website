@@ -24,43 +24,26 @@
 .navbar-nav .nav-link:hover {
     color: rgb(236, 47, 47);
 }
-.img img{
-    height: 550px;
-    width:100%;
+.talk{
+    font-size: 22px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: orange;
+
 }
-.img2 img{
-    height: 250px;
+.talk1{
+    font-size: 34px;
+    font-family: "Dosis", sans-serif;
+    font-size: 44px;
+    color: rgba(8, 43, 118, 0.694);
+    font-weight:bold;
+    
+   
+}
+.img img{
+    height:40vw;
     width:100%;
 }
 
-.img2 h2{
-    font-family:Arial, Helvetica, sans-serif;
-    font-weight: 700;
-    font-size: 36px;
-    color:#dccf11;
-    line-height: 30px;
-   text-align:left;
-   margin-top: 20px;
-}
-.img2 h3{
-    font-family:display fair;
-    font-weight: 400;
-    font-size: 20px;
-    color: green;
-    line-height: 20px;
-    text-align:left;
-    margin-top: 10px;
- 
-}
-.img2 p{
-    font-family:Arial, Helvetica, sans-serif;
-    font-weight:bold;
-    font-size: 36px;
-    color: green;
-    text-align:right;
-    margin-top: 40px;
- 
-}
 
 .required::after{
     content: "*";
@@ -77,6 +60,41 @@
     color: white;
     font-family: poppins;
     font-size: 14px;
+}
+
+.nav-item a{
+    color: black;
+}
+
+.nav-fill a:hover{
+    border-bottom: 2.5px solid red;
+}
+.nav-fill.nav-link{
+    color:black;
+    font-size: 15px;
+    font-family: poppins;
+    text-decoration: none;
+    font-weight: 400;
+    border-bottom:0px !important;
+    
+
+}
+.nav-fill a:hover{
+    color:black;
+    font-size: 15px;
+    font-family: poppins;
+    text-decoration: none;
+    font-weight: 400;
+    border-bottom : 2.5px solid red;
+    box-shadow: 1px 1px 2px 2px rgb(227, 224, 224);
+    background-color: white;
+
+}
+.nav-fill a:active{
+    border: 2px solid white;
+    padding: 5px;
+    display: inline-block;
+    box-sizing: border-box;
 }
 .btn-box{
     background-color:#f6f6f6;
@@ -99,9 +117,71 @@
     line-height: 26px;
 
 }
+
+form input:hover{
+    border: 1px solid red;
+}
+.col-md-6 input,.col-md-6 select{
+    border: 1px solid #0a3876;
+    background-color:#c3ccd336 ;
+}
+.contact-section i{
+    font-size: 18px;
+    color:#486080;
+    background-color: rgba(239, 233, 233, 0.744);
+    padding: 10px;
+    border-radius: 50px;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+   
+}
+.form-label{
+    font-size: 14px;
+    color: black;
+  
+    font-family: poppins;
+}
+.contact-section i:hover{
+    font-size: 20px;
+    color:white;
+    background-color:#486080;
+    padding: 15px;
+    border-radius: 60px;
+    text-align: center;
+    width: 60px;
+    height: 60px;
+    border:1 px solid red;
+    box-shadow: 0 0 3px 3px rgb(221, 216, 216);
+   
+}
+.contact-section h5{
+  
+    font-size: 18px;
+    font-weight: 700;
+    padding-left: 10px;
+    padding-top: 20px;
+    
+
+}
+.contact-section p{
+    
+    font-size: 12px;
+    font-weight: 400;
+    padding-left: 10px;
+    
+
+}
+.contact-section p:hover{
+    font-family: poppins;
+    font-size: 12px;
+    font-weight: 400;
+    color: red;
+
+}
 .floating-button {
     position: fixed;
-    right: 0px;
+   
     top: 50%;
     transform: translateY(-50%);
     background: rgba(0, 74, 173, 0.8);
