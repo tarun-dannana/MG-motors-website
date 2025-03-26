@@ -144,10 +144,14 @@
     font-weight: bold;
     margin-bottom: 20px;
 }
-.testimonal {
+ .testimonal {
     background: url('../images/photo-1495435229349-e86db7bfa013.jpg') no-repeat center center fixed;
     background-size: cover;
-    background-position: top;
+    background-position: top; 
+    /* background: url('../images/photo-1601929862217-f1bf94503333.jpg') no-repeat center center fixed;
+    background-size: cover;
+    background-position: top; */
+
     margin-top: 100px;
     margin-bottom: 100px;
 }
@@ -190,7 +194,7 @@
     color: #333;
     transition: color 0.3s ease-in-out;
     transition: background-color 0.3s ease-in-out;
-
+    
 }
 .icon-container {
     padding: 20px;

@@ -1,3 +1,6 @@
+html{
+    overflow-x: hidden;
+}
 .navbar {
     background-color: rgb(255, 255, 255);
     padding: 10px 0;
@@ -21,13 +24,14 @@
     margin: 0 15px;
 }
 
+.sign-up{
+    border-radius: 30px;
+}
 .navbar-nav .nav-link:hover {
     color: rgb(236, 47, 47);
 }
 
-.sign-up{
-    border-radius: 30px;
-}
+
 .img img{
     height: 550px;
     width:100%;
