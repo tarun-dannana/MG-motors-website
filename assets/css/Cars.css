@@ -28,11 +28,9 @@
 .navbar-nav .nav-link:hover {
     color: rgb(236, 47, 47);
 }
-.contact-info {
-    font-size: 17px;
-    color: #0a3876;
+.sign-up{
+    border-radius: 30px;
 }
-
 .car-container img{
      height:55vh;
      object-fit:cover;
