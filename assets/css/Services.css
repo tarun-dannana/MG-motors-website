@@ -24,14 +24,18 @@
 .navbar-nav .nav-link:hover {
     color: rgb(236, 47, 47);
 }
-.sign-up{
-    border-radius: 30px;
+.signin a{
+    font-size: 14px;
+background-color:#0a3876;
+font-family: poppins;
+font-weight: 600;
+
 }
 .s-box{
     height: 300px;
     transition: background-color 0.3s ease-in-out;
     border-radius: 10px;
-  }
+}
   .service-box{
       height: 250px;
       background-color: rgba(240, 238, 238, 0.66);
@@ -39,33 +43,34 @@
       
   }
   .s-box:hover .service-box:nth-child(1){
-      background-color:#1AAFBC;
+      background-color:rgb(86, 105, 105);
+      
       color: white;
   }
   .s-box:hover .span:nth-child(2){
-      background-color:#274e6c;
-      color: aqua;
-    
+      background-color:rgb(99, 164, 164);
+      color: white;
       transition: all 0.3s ease-out;
   }
-  
+  .s-box:hover .span,.s-box:hover .span a{
+   
+    text-decoration: none;
+    color: white;274e6c
+}
+
   .span{
       background-color: #f6f6f6;
      text-align: center;
       height: 50px;
      align-content: center;
-  
-  
   }
   .span a{
-      color:rgb(220, 53, 53);
-      text-decoration: none;
-      
-      
-  }
-  .span a:hover{
-      color: rgb(246, 157, 15);
-  }
+    color:rgb(164, 29, 29);
+    text-decoration: none;  
+}
+.s-box a:hover{
+    color: rgb(249, 248, 245);
+}
   .service-box i{
      
       font-size: 30px;

@@ -54,14 +54,14 @@
           </div>
   
           <!-- Sign Up Button -->
-          <div class="d-none d-lg-block">
-            <a href="./signup.html" class="btn btn-dark sign-up">Sign Up</a>
+          <div class="d-none signup d-lg-block">
+            <a href="./signup.html" class="btn btn-dark rounded-pill ">Sign In</a>
         </div>
       </div>
   </nav>
     <div class="container-fluid p-0 mt-2">
         <div class="row p-0">
-            <div class=" img col-md-12">
+            <div class=" img col-md-12 p-0">
                 <img src="./assets/images/contacusblue.jpg">
             </div>
         </div>
@@ -69,126 +69,171 @@
    
     <div class="container mt-5 mb-5">
         <div class="row">
-            <div class="col-md-12 text-center">
+            <div class="col-sm-12 text-center">
                 <p class=" talk mb-2 fw-bold">Let's Talk !</p>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-12 text-center">
+            <div class="col-sm-12 text-center">
                 <p class=" talk1   fw-bold">Contact Us</p>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-8">
-                <div class="container-box">      
-                    <div class="col-md-8 mb-4">
-                       <p>Please let us know, how can we help you:</p>
+       
+        <div class="container mt-2 mb-5">
+            <div class="row">
+                <div class="col-md-8 form12">
+                    <div class="container-box">
+                        <div class="col-md-8 mb-2">
+                           <p>Please let us know, how can we help you:</p>
+                        </div>
                     </div>
-                   
-                        <div class="col-md-10 d-flex  mb-5">
-                            <ul class="nav nav-fill gap-3">
-                                <li class="nav-item ">
-                                  <a class="nav-link active" aria-current="page" href="">Car Enquiry</a>
-                                </li>
-                              
-                                <li class="nav-item">
-                                  <a class="nav-link " href="C:/Users/tarun/OneDrive/Pictures/Documents/dazbyte%20vs/ecommerce/MgMotorsContactus.html#"aria-disabled="true">Feedback</a>
-                                </li>
-                              </ul>
+                    
+        <!-- Tabs Navigation -->
+        <ul class="nav nav1" id="formTabs">
+            <li class="nav-item">
+                <a class="nav-link " id="enquiry-tab" data-bs-toggle="tab" href="#enquiry-form">Car Enquiry</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="feedback-tab" data-bs-toggle="tab" href="#feedback-form">Feedback</a>
+            </li>
+        </ul>
+
+        <div class="tab-content enq1 mt-4">
+            <!-- Car Enquiry Form -->
+            <div class="tab-pane fade show active" id="enquiry-form">
+              
+                <form>
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label for="name" class="form-label required">Name </label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
                         </div>
-                
-                
-                    <form>
-                        <div class="row">
-                            
-                            <div class="col-md-6 mb-3">
-                                <label for="name" class="form-label required">Name </label>
-                                <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
-                            </div>
-                            <div class="col-md-6 mb-3">
-                                <label for="email" class="form-label required">Email </label>
-                                <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
-                            </div>
+                        <div class="col-md-6">
+                            <label for="email" class="form-label required">Email </label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
                         </div>
-                        <div class="row">
-                            <div class="col-md-6 mb-3">
-                                <label for="name" class="form-label required">Mobile No </label>
-                                <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
-                            </div>
-                      
-                        <div class="col-md-6 ">
+                    </div>
+
+                    <div class="row mb-5 ">
+                        <div class="col-md-6">
+                            <label for="mobile" class="form-label required">Mobile No</label>
+                            <input type="text" class="form-control" id="mobile" placeholder="Enter your mobile number" required>
+                        </div>
+                        <div class="col-md-6">
                             <label for="model" class="form-label required">Model </label>
                             <select class="form-select" id="model" required>
-                                <option value="" disabled selected>Select Model</option>
-                                <option value="Model1">Model 1</option>
-                                <option value="Model2">Model 2</option>
-                                <option value="Model3">Model 3</option>
+                                <option value="">Select Model</option>
+                                <option value="suv">SUV</option>
+                                <option value="sedan">Sedan</option>
+                                <option value="hatchback">Hatchback</option>
                             </select>
                         </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6 mb-4">
-                            <label for="outlet" class="form-label required">Outlet </label>
-                            <select class="form-select" id="outlet" required>
-                                <option value="" disabled selected>Select Outlet</option>
-                                <option value="Outlet1">Outlet 1</option>
-                                <option value="Outlet2">Outlet 2</option>
-                                <option value="Outlet3">Outlet 3</option>
-                            </select>
-                        </div>
-                        </div>
-    
-                        <button type="submit" class="btn btn-primary w-25 ">Submit</button>
-                    </form>
-                </div>
-            </div>
-    
-           
-            <div class="col-md-4">
-                <div class="contact-section p-3  m-2">
-                    <div class="d-flex align-items-center mb-2">
-                        <i class="bi-telephone-fill me-2"></i>
-                      
-                    <div>
-                        <h5 class="mb-0">Sales</h5>
-                        <p class="contact-info"> 9100050937</p>
-                    </div>
                     
-                </div>
-                    <div class="d-flex align-items-center mb-2">
-                        <i class="bi bi-telephone-fill me-2"></i>
-                     
-                    <div>
-                        <h5 class="mb-0">Service</h5>
-                        <p class="contact-info">9885622611</p>
-                    </div>
-                  
-                </div>
-                
-                    <div class="d-flex align-items-center mb-2">
-                        <i class="bi bi-envelope-fill me-2"></i>
-                        
-                   <div>
-                    <h5 class="mb-0">Email</h5>
-                    <p class="contact-info"> enquiries@varungroup.com</p>
-                   </div>
-                    
-                </div>
-                
-                <div class="d-flex align-items-center mb-2">
-                    <i class="bi-geo-alt-fill me-2"></i>
-               <div>
-                <h5 class="mb-0">Address</h5>
-                <p class="contact-info mb-0"> Mallayapeta</p>
-               <p>Rajamahendravaram,AndhraPradesh</p>  
-               </div>
 
+                        <div class="col-md-6 mt-3">
+                        <label for="outlet" class="form-label required">Outlet </label>
+                        <select class="form-select" id="outlet" required>
+                            <option value="">Select Outlet</option>
+                            <option value="city1">City 1</option>
+                            <option value="city2">City 2</option>
+                        </select>
+                    </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
             </div>
-        </div>
+
+            <!-- Feedback Form -->
+            <div class="tab-pane fade" id="feedback-form">
+                
+                <form>
+                    <div class="row mt-3 mb-3">
+                        <div class="col-md-6">
+                            <label for="name" class="form-label required">Name </label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="email" class="form-label required">Email </label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label for="mobile" class="form-label required">Mobile No </label>
+                            <input type="text" class="form-control" id="mobile" placeholder="Enter your mobile number" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="model" class="form-label required">Model </label>
+                            <select class="form-select" id="model" required>
+                                <option value="">Select Model</option>
+                                <option value="suv">SUV</option>
+                                <option value="sedan">Sedan</option>
+                                <option value="hatchback">Hatchback</option>
+                            </select>
+                        </div>
+
+                    <div class="mb-2 mt-3 enq2">
+                        
+                        <label for="message" class="form-label">Message *</label>
+                        <textarea class="form-control" id="message" rows="5" placeholder="Enter your message" required></textarea>
+                    
+                    </div>
                 </div>
+
+                    <button type="submit" class="btn btn-success">Send Feedback</button>
+                </form>
             </div>
         </div>
     </div>
+                         
+           <div class="col-md-4">
+                    <div class="contact-section p-3  m-2">
+                        <div class="d-flex align-items-center mb-2">
+                            <i class="bi-telephone-fill me-2"></i>
+                          
+                        <div>
+                            <h5 class="mb-0">Sales</h5>
+                            <p class="contact-info"> 9100050937</p>
+                        </div>
+                        
+                    </div>
+                        <div class="d-flex align-items-center mb-2">
+                            <i class="bi bi-telephone-fill me-2"></i>
+                         
+                        <div>
+                            <h5 class="mb-0">Service</h5>
+                            <p class="contact-info">9885622611</p>
+                        </div>
+                      
+                    </div>
+                    
+                        <div class="d-flex align-items-center mb-2">
+                            <i class="bi bi-envelope-fill me-2"></i>
+                            
+                       <div>
+                        <h5 class="mb-0">Email</h5>
+                        <p class="contact-info"> enquiries@mgmotors.com</p>
+                       </div>
+                        
+                    </div>
+                    
+                    <div class="d-flex align-items-center mb-2">
+                        <i class="bi-geo-alt-fill me-2"></i>
+                   <div>
+                    <h5 class="mb-0">Address</h5>
+                    <p class="contact-info mb-0"> Mallayapeta</p>
+                   <p>Rajamahendravaram,AndhraPradesh</p>  
+                   </div>
+    
+                </div>
+            </div>
+         </div>
+           
+        </div>
+    </div>
+</div>
+    
     <div class="container-fluid p-0 my-3">
      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d196064.65881483705!2d88.93201515862421!3d24.061083775097945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39febca82f6a21ed%3A0x4040980d7c6874f8!2sKushtia%20District!5e0!3m2!1sen!2sbd!4v1673751720794!5m2!1sen!2sbd" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>

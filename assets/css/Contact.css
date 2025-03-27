@@ -1,4 +1,7 @@
-.navbar {
+
+body{
+    overflow-x: hidden;
+}.navbar {
     background-color: rgb(255, 255, 255);
     padding: 10px 0;
 }
@@ -25,13 +28,15 @@
     color: rgb(236, 47, 47);
 }
 
-.sign-up{
-    border-radius: 30px;
+.signup a{
+    font-size: 14px;
+background-color:#0a3876;
+font-family: poppins;
+font-weight: 600;
+    
+
 }
-.img img{
-    height: 550px;
-    width:100%;
-}
+
 .talk{
     font-size: 22px;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -48,36 +53,43 @@
    
 }
 .img img{
-    height:40vw;
+    height:50vw;
     width:100%;
 }
-
-
+.form12 button{
+    background-color: #0a3876;
+    color: white;
+    font-family: poppins;
+    font-size: 14px;
+}
 .required::after{
     content: "*";
     color: red;
 }
-.col-md-8 button{
-    background-color: #0a3876;
-    color: white;
-    font-family: poppins;
-    font-size: 14px;
-}
-.col-md-4 button{
-    background-color: #0a3876;
-    color: white;
-    font-family: poppins;
-    font-size: 14px;
-}
-
 .nav-item a{
     color: black;
+    font-family:poppins;
+    font-size:16px;
+    font-weight: 600;
+
+}
+.nav-link:active{
+    border: 2px solid rgb(196, 37, 37);
+    padding: 5px;
+    display: inline-block;
+    box-sizing: border-box;
+}
+.enq1 input,.enq1 select,.enq2,.enq2 textarea{
+    border-color: #0a3876;
+    font-family: poppins;
+   
 }
 
-.nav-fill a:hover{
+
+.nav1 a:hover{
     border-bottom: 2.5px solid red;
 }
-.nav-fill.nav-link{
+.nav1.nav-link{
     color:black;
     font-size: 15px;
     font-family: poppins;
@@ -87,7 +99,7 @@
     
 
 }
-.nav-fill a:hover{
+.nav1 a:hover{
     color:black;
     font-size: 15px;
     font-family: poppins;
@@ -98,40 +110,9 @@
     background-color: white;
 
 }
-.nav-fill a:active{
-    border: 2px solid white;
-    padding: 5px;
-    display: inline-block;
-    box-sizing: border-box;
-}
-.btn-box{
-    background-color:#f6f6f6;
-    padding: 20px;
-   width: 350px;
-   height: 150px;
-   text-align: left;
-   border-radius: 20px;
-}
-.btn-box h3{
-    font-family:poppins;
-    font-size: 20px;
-    font-weight: 600;
-
-}
-.btn-box p{
-    font-family:poppins;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 26px;
-
-}
-
-form input:hover{
-    border: 1px solid red;
-}
-.col-md-6 input,.col-md-6 select{
-    border: 1px solid #0a3876;
-    background-color:#c3ccd336 ;
+.required::after{
+    content: "*";
+    color: red;
 }
 .contact-section i{
     font-size: 18px;
@@ -154,13 +135,12 @@ form input:hover{
     font-size: 20px;
     color:white;
     background-color:#486080;
-    padding: 15px;
-    border-radius: 60px;
+    padding: 10px;
+    border-radius: 50px;
     text-align: center;
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     border:1 px solid red;
-    box-shadow: 0 0 3px 3px rgb(221, 216, 216);
    
 }
 .contact-section h5{

@@ -2,10 +2,14 @@
     font-family: sans-serif;
     overflow-x: hidden;
 }
+html{
+    overflow-x: hidden;
+}
 .navbar {
     background-color: rgb(255, 255, 255);
     padding: 10px 0;
 }
+
 
 .navbar-brand img {
     height: 65px;
@@ -28,9 +32,7 @@
 .navbar-nav .nav-link:hover {
     color: rgb(236, 47, 47);
 }
-.sign-up{
-    border-radius: 30px;
-}
+
 .banner {
     width: 100%;
     height: auto;
@@ -38,6 +40,14 @@
 .text-container {
     text-align: center;
     margin-top: 20px;
+}
+.signin a{
+    font-size: 14px;
+background-color:#0a3876;
+font-family: poppins;
+font-weight: 600;
+    
+
 }
 
 .image-container {
@@ -164,109 +174,98 @@
 }
 
 .team-box{
-    background: url('../images/photo-1601929862217-f1bf94503333.jpg') no-repeat center center;
-    background-size: cover;
-    background-position: top;
+    background-color: white;
 }
 
 .team-section {
     font-family: 'Poppins', sans-serif;
-    background-color: #f8f9fa;
+  
     text-align: center;
-    padding: 50px 0;
-    background: rgba(52, 111, 189, 0.1); 
-    opacity: 1;
+
 }
 
 .team-heading {
-    font-size: 32px;
+    font-size: 40px;
     font-weight: bold;
     margin-bottom: 30px;
-    color: #ffffff;
+    color: #b78d03;
+    font-family: 'Dosis', sans-serif;;
 }
+
 
 /* Team Card */
-.team-card {
-    /* background: #0a3876; */
-    color: white;
-    padding: 30px;
-    border-radius: 10px;
-    text-align: center;
-    transition: background 0.3s ease-in-out, transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+.team-card{
     position: relative;
-    overflow: hidden; 
+    overflow: hidden;
+    text-align: center;
+     width: 100%;
+    border-radius: 20px;
+   
+    
 }
-
-.team-card:hover {
-    transform: scale(1.05);
-    /* box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); */
+.team-card img{
+     width:100%;
+    transition: 0.5s ease;
 }
-
-/* Image */
-.team-img {
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
-    border: 3px solid #fff;
-    margin-bottom: 15px;
-}
-
-/* Text (Hides on Hover) */
-.team-card h3, .team-card p {
-    transition: opacity 0.3s ease-in-out;
-    color: purple;
-}
-
-.team-card:hover h3, .team-card:hover p {
-    opacity: 0;
-}
-
-/* Social Media Icons */
-.social-icons {
+.social-icons{
     position: absolute;
-    bottom: -50px;
-    left: 50%;
-    transform: translateX(-50%);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
     display: flex;
-    gap: 20px;
-    transition: all 0.1s ease-in-out;
-}
-
-/* Icons - Bigger, More Stylish */
-.social-icons i {
-    font-size: 25px; /* Increased size */
-    padding: 15px;
-    border-radius: 50%;
-    color: white;
-    transition: all 0.3s ease-in-out;
-    transform: translateY(20px);
+    justify-content: center;
+    align-items: center;
     opacity: 0;
+    gap: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    transition: opacity 0.5s ease;
 }
-
-/* Icon Colors */
-.instagram { background: #E1306C; } /* Instagram Pink */
-.facebook { background: #1877F2; } /* Facebook Blue */
-.twitter { background: #f29d1d; } /* Twitter Blue */
-
-/* Hover Effect - Icons Appear */
-.team-card:hover .social-icons {
-    bottom: 30px;
+.team-card:hover img{
+    filter:blur(5px);
 }
-
-.team-card:hover .social-icons i {
+.team-card:hover .social-icons{
     opacity: 1;
-    transform: translateY(0);
+}
+.social-icons i{
+   font-size: 14px;
+    background: #ddd;
+    color: black;
+    font-weight: 700;
+   width: 100%;
+   padding: 8px;
+    text-decoration: none;
+   
+
 }
 
-/* Smooth Animation for Each Icon */
-.team-card:hover .social-icons i:nth-child(1) { transition-delay: 0.1s; }
-.team-card:hover .social-icons i:nth-child(2) { transition-delay: 0.2s; }
-.team-card:hover .social-icons i:nth-child(3) { transition-delay: 0.3s; }
+.social-icons li{
+    border: 1px solid white;
+    width: 30px;
+    height: 30px;
+   border-radius: 2px;
+  text-decoration: none;
+  list-style-type: none;
 
-/* Icon Hover Effects */
-.social-icons i:hover {
-    transform: scale(1.2);
-    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.5);
+}
+.social-icons i:hover{
+    background: #0077b5;
+    color: white;
+
+}
+.teamdiv h3{
+    font-family:'Dosis',sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: black;
+}
+.teamdiv p{
+    font-family:'Dosis',sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(207, 172, 0);
+    line-height: 14px;
 }
 .award-title {
     font-size: 14px;
@@ -318,16 +317,16 @@
 .gallery-section {
     font-family: 'Poppins', sans-serif;
     text-align: center;
-    padding: 50px 0;
-    background: linear-gradient(to right, #0a3876, #0d1d38);
     color: white;
+    background-color: #fdf6f6;
 }
 
 .gallery-heading {
     font-size: 36px;
+    font-family:'Dosis',sans-serif;
     font-weight: bold;
     margin-bottom: 30px;
-    color: #fff;
+    color:#0a3876;
 }
 
 /* Gallery Item */
@@ -335,42 +334,53 @@
     position: relative;
     overflow: hidden;
     border-radius: 10px;
-    padding: 10px;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    background: rgba(255, 255, 255, 0.1);
+    width:100% ;
+    transition: transform 0.3s ease-in, box-shadow 0.3s ease-in-out;
+    background: rgb(86, 105, 105);
     border-radius: 12px;
+    border: 1px solid #b78d03;
+    border-top: 4px solid rgb(255, 157, 0);
+    border-bottom: 4px solid rgb(255, 157, 0);
 }
-
-.gallery-item img {
+.gallery-item:hover{
+    
+    border-radius: 20px;
+    
+}
+.gallery-item:hover img {
     width: 100%;
     height: auto;
-    object-fit: cover;
-    border-radius: 10px;
-    transition: transform 0.3s ease-in-out, border-radius 0.3s ease-in-out;
+    object-fit:fill; 
+    margin-bottom: 20px;
+    border-radius: 10%;
+    transition: transform 0.3s ease-in-out;
 }
 
 /* Hover Effects */
-.gallery-item:hover img {
+.gallery-item img {
     transform: scale(0.7);
-    border-radius: 50%;
+    width: 85%;
+   
+    border-radius: 10px;
 }
 
 /* Text that appears on hover */
 .gallery-text {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: bold;
-    color: #fff;
+    color: rgb(240, 241, 244);
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
     position: absolute;
-    bottom: 10px;
+    bottom: 2px;
     left: 50%;
     transform: translate(-50%, 20px);
-    width: 90%;
+    width: 80%;
+    height: 50px;
     text-align: center;
-    background: rgba(255, 255, 255, 0.2);
-    padding: 10px;
+    line-height: 20px;
+    padding: 5px;
     border-radius: 8px;
 }
 
